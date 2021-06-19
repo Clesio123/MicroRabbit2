@@ -1,20 +1,18 @@
-﻿using MediatR;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MicroRabbit.Domain.Core.Events
+namespace MicroRabbit.Domain.core.p.Events
 {
-    public abstract class Message : IRequest<bool>
+   public abstract class Message: IRequest<bool>
     {
-
         public string MessageType { get; protected set; }
 
         protected Message()
         {
             MessageType = GetType().Name;
-
         }
-    }
 
+
+    }
 }
